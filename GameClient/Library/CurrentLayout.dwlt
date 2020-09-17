@@ -392,14 +392,14 @@ MonoBehaviour:
     height: 347
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 11373.1424937
+  lastFramingTime: 2848.7996304
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 57.662567, y: 257.7461, z: -0.514843}
+    m_Target: {x: 65.89999, y: 259.09998, z: 0}
     speed: 2
-    m_Value: {x: 57.662567, y: 257.7461, z: -0.514843}
+    m_Value: {x: 65.89999, y: 259.09998, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -423,13 +423,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.09799439, y: -0.027796365, z: -0.0024209206, w: -0.9947978}
+    m_Target: {x: -0.062259343, y: -0.020343011, z: 0.0015870815, w: -0.997856}
     speed: 2
-    m_Value: {x: 0.09799439, y: -0.027796365, z: -0.0024209206, w: -0.9947979}
+    m_Value: {x: -0.06225906, y: -0.02034292, z: 0.0015870742, w: -0.9978515}
   m_Size:
-    m_Target: 124.51205
+    m_Target: 306.35733
     speed: 2
-    m_Value: 124.51205
+    m_Value: 306.35733
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -470,23 +470,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 782f0000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 94fbffff00000000
+    m_ExpandedIDs: 26faffff32faffff94fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: MapRender
+      m_OriginalName: MapRender
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -1496
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -534,7 +534,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Resources/Materials
+    - Assets/Resources
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
