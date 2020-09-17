@@ -1,0 +1,46 @@
+E:\UnityBook\Chapter7\Server\Game\Game\bin\Debug\Game.exe
+E:\UnityBook\Chapter7\Server\Game\Game\bin\Debug\Game.pdb
+E:\UnityBook\Chapter7\Server\Game\Game\obj\x86\Debug\Game.exe
+E:\UnityBook\Chapter7\Server\Game\Game\obj\x86\Debug\Game.pdb
+E:\UnityBook\Chapter7\Server\Game\Game\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache
+E:\UnityBook\Chapter10\Server\Game\Game\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache
+E:\UnityBook\Chapter10\Server\Game\Game\obj\x86\Debug\Game.exe
+E:\UnityBook\Chapter10\Server\Game\Game\bin\Debug\Game.exe
+E:\UnityBook\Chapter10\Server\Game\Game\bin\Debug\Game.pdb
+E:\UnityBook\Chapter10\Server\Game\Game\obj\x86\Debug\Game.pdb
+E:\UnityBook\Chapter11\Server\Game\Game\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache
+E:\UnityBook\Chapter11\Server\Game\Game\obj\x86\Debug\Game.exe
+E:\UnityBook\Chapter11\Server\Game\Game\bin\Debug\Game.exe
+E:\UnityBook\Chapter11\Server\Game\Game\bin\Debug\Game.pdb
+E:\UnityBook\Chapter11\Server\Game\Game\obj\x86\Debug\Game.pdb
+E:\UnityBook\Chapter12\Server\Game\Game\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache
+E:\UnityBook\Chapter12\Server\Game\Game\obj\x86\Debug\Game.exe
+E:\UnityBook\Chapter12\Server\Game\Game\obj\x86\Debug\Game.pdb
+E:\UnityBook\Chapter12\Server\Game\Game\bin\Debug\Game.exe
+E:\UnityBook\Chapter12\Server\Game\Game\bin\Debug\Game.pdb
+E:\UnityBook\Final\Server\Game\Game\bin\Debug\Game.exe
+E:\UnityBook\Final\Server\Game\Game\bin\Debug\Game.pdb
+E:\UnityBook\Final\Server\Game\Game\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache
+E:\UnityBook\Final\Server\Game\Game\obj\x86\Debug\Game.exe
+E:\UnityBook\Final\Server\Game\Game\obj\x86\Debug\Game.pdb
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\Game.exe
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\Game.pdb
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\MySql.Data.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\System.Web.Extensions.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\Google.Protobuf.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\Zstandard.Net.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\K4os.Compression.LZ4.Streams.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\BouncyCastle.Crypto.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\Ubiety.Dns.Core.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\Renci.SshNet.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\System.Buffers.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\K4os.Compression.LZ4.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\K4os.Hash.xxHash.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\System.Memory.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\bin\Debug\MySql.Data.xml
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\obj\x86\Debug\Game.csprojAssemblyReference.cache
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\obj\x86\Debug\Game.csproj.CoreCompileInputs.cache
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\obj\x86\Debug\Game.csproj.CopyComplete
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\obj\x86\Debug\Game.exe
+G:\Unity Projects\UnityNetGame\Final_Unity3D网络游戏实战（第二版）_罗培羽\Final\Server\Game\Game\obj\x86\Debug\Game.pdb
