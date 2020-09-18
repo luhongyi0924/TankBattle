@@ -151,7 +151,7 @@ public class CtrlTank : BaseTank
             {
                 //发射
                 bullet = Fire();
-            }   
+            }
         }
         ////发送同步协议
         //MsgFire msg = new MsgFire();
@@ -190,7 +190,7 @@ public class CtrlTank : BaseTank
     public Vector3 ForecastExplodePoint()
     {
         //碰撞信息和碰撞点
-        Vector3 hitPoint ;
+        Vector3 hitPoint;
         RaycastHit hit;
         //沿着炮管方向的射线
         Vector3 pos = firePoint.position;

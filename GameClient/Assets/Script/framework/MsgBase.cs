@@ -1,23 +1,26 @@
 ﻿using System;
+using System.Text;
 using UnityEngine;
 using System.Linq;
 
 public class MsgBase
 {
     public string protoName = "null";
+
     //编码
     public static byte[] Encode(MsgBase msgBase)
     {
         string s = JsonUtility.ToJson(msgBase);
-        return System.Text.Encoding.UTF8.GetBytes(s);
+        return Encoding.UTF8.GetBytes(s);
     }
 
     //解码
     public static MsgBase Decode(string protoName, byte[] bytes, int offset, int count)
     {
-        string s = System.Text.Encoding.UTF8.GetString(bytes, offset, count);
+        string s = Encoding.UTF8.GetString(bytes, offset, count);
         Debug.Log("Debug decode:" + s);
         MsgBase msgBase = (MsgBase)JsonUtility.FromJson(s, Type.GetType(protoName));
+        
         return msgBase;
     }
 
@@ -25,7 +28,7 @@ public class MsgBase
     public static byte[] EncodeName(MsgBase msgBase)
     {
         //名字bytes和长度
-        byte[] nameBytes = System.Text.Encoding.UTF8.GetBytes(msgBase.protoName);
+        byte[] nameBytes = Encoding.UTF8.GetBytes(msgBase.protoName);
         Int16 len = (Int16)nameBytes.Length;
         //申请bytes数值
         byte[] bytes = new byte[2 + len];
@@ -56,7 +59,8 @@ public class MsgBase
         }
         //解析
         count = 2 + len;
-        string name = System.Text.Encoding.UTF8.GetString(bytes, offset + 2, len);
+        string name = Encoding.UTF8.GetString(bytes, offset + 2, len);
+
         return name;
     }
 }

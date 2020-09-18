@@ -185,6 +185,7 @@ public class DbManager
     public static PlayerData GetPlayerData(string id)
     {
         CheckAndReconnect();
+
         //防sql注入
         if (!DbManager.IsSafeString(id))
         {
@@ -202,6 +203,7 @@ public class DbManager
             if (!dataReader.HasRows)
             {
                 dataReader.Close();
+
                 return null;
             }
             //读取
@@ -210,11 +212,13 @@ public class DbManager
             //反序列化
             PlayerData playerData = Js.Deserialize<PlayerData>(data);
             dataReader.Close();
+
             return playerData;
         }
         catch (Exception e)
         {
             Console.WriteLine("[数据库] GetPlayerData fail, " + e.Message);
+
             return null;
         }
     }

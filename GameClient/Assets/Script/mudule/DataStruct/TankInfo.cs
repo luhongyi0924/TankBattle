@@ -1,5 +1,7 @@
-﻿//坦克信息
-[System.Serializable]
+﻿using System;
+
+//坦克信息
+[Serializable]
 public class TankInfo
 {
     public string id = "";  //玩家id

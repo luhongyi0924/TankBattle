@@ -42,7 +42,8 @@ public static class NetManager
     //事件委托类型
     public delegate void EventListener(String err);
     //事件监听列表
-    private static Dictionary<NetEvent, EventListener> eventListeners = new Dictionary<NetEvent, EventListener>();
+    private static Dictionary<NetEvent, EventListener> eventListeners =
+        new Dictionary<NetEvent, EventListener>();
 
     //添加事件监听
     public static void AddEventListener(NetEvent netEvent, EventListener listener)
@@ -81,7 +82,8 @@ public static class NetManager
     public delegate void MsgListener(MsgBase msgBase);
 
     //消息监听列表
-    private static Dictionary<string, MsgListener> msgListeners = new Dictionary<string, MsgListener>();
+    private static Dictionary<string, MsgListener> msgListeners = 
+        new Dictionary<string, MsgListener>();
 
     //添加消息监听
     public static void AddMsgListener(string msgName, MsgListener listener)
@@ -220,18 +222,11 @@ public static class NetManager
     public static void Send(MsgBase msg)
     {
         //状态判断
-        if (socket == null || !socket.Connected)
+        if (socket == null || !socket.Connected|| isConnecting || isClosing)
         {
             return;
         }
-        if (isConnecting)
-        {
-            return;
-        }
-        if (isClosing)
-        {
-            return;
-        }
+
         //数据编码
         byte[] nameBytes = MsgBase.EncodeName(msg);
         byte[] bodyBytes = MsgBase.Encode(msg);
@@ -246,7 +241,7 @@ public static class NetManager
         Array.Copy(bodyBytes, 0, sendBytes, 2 + nameBytes.Length, bodyBytes.Length);
         //写入队列
         ByteArray ba = new ByteArray(sendBytes);
-        int count = 0;  //writeQueue的长度
+        int count = 0;                  //writeQueue的长度
         lock (writeQueue)
         {
             writeQueue.Enqueue(ba);
@@ -255,15 +250,13 @@ public static class NetManager
         //send
         if (count == 1)
         {
-            socket.BeginSend(sendBytes, 0, sendBytes.Length,
-                0, SendCallback, socket);
+            socket.BeginSend(sendBytes, 0, sendBytes.Length,0, SendCallback, socket);
         }
     }
 
     //Send回调
     public static void SendCallback(IAsyncResult ar)
     {
-
         //获取state、EndSend的处理
         Socket socket = (Socket)ar.AsyncState;
         //状态判断

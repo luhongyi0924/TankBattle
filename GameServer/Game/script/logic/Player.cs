@@ -1,37 +1,39 @@
 ﻿using System;
 
-public class Player {
-	//id
-	public string id = "";
-	//指向ClientState
-	public ClientState state;
-	//构造函数
-	public Player(ClientState state){
-		this.state = state;
-	}
-	//坐标和旋转
-	public float x; 
-	public float y; 
-	public float z;
-	public float ex; 
-	public float ey; 
-	public float ez;
+public class Player
+{
+    //id
+    public string id = "";
+    //指向ClientState
+    public ClientState state;
+    //构造函数
+    public Player(ClientState state)
+    {
+        this.state = state;
+    }
 
-	//在哪个房间
-	public int roomId = -1;
-	//阵营
-	public int camp = 1;
-	//坦克生命值
-	public int hp = 100;
+    //当前的位置坐标transform.position
+    public float x;
+    public float y;
+    public float z;
+    //当前的旋转角度transform.rotation
+    public float ex;
+    public float ey;
+    public float ez;
 
-	//数据库数据
-	public PlayerData data;
+    //在哪个房间
+    public int roomId = -1;
+    //阵营
+    public int camp = 1;
+    //坦克生命值
+    public int hp = 100;
 
-	//发送信息
-	public void Send(MsgBase msgBase){
-		NetManager.Send(state, msgBase);
-	}
+    //数据库数据
+    public PlayerData data;
 
+    //发送信息
+    public void Send(MsgBase msgBase)
+    {
+        NetManager.Send(state, msgBase);
+    }
 }
-
-

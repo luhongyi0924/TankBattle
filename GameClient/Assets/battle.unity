@@ -786,7 +786,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4399250721612802, guid: b260e44fdab6f0f4c8d92116ca2ca9e3, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4399250721612802, guid: b260e44fdab6f0f4c8d92116ca2ca9e3, type: 2}
       propertyPath: m_LocalScale.x
@@ -1410,31 +1410,31 @@ Prefab:
     - target: {fileID: 224791875282714296, guid: 81defbb8c6876d84581a59b761d59853,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4882946883358334, guid: 81defbb8c6876d84581a59b761d59853, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224384324331739252, guid: 81defbb8c6876d84581a59b761d59853,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224208433346041862, guid: 81defbb8c6876d84581a59b761d59853,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224651114711025720, guid: 81defbb8c6876d84581a59b761d59853,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224761034129362270, guid: 81defbb8c6876d84581a59b761d59853,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81defbb8c6876d84581a59b761d59853, type: 2}
@@ -5256,7 +5256,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4714144233013880, guid: 9119befed9312ea4f80745b0c4be8bbc, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4714144233013880, guid: 9119befed9312ea4f80745b0c4be8bbc, type: 2}
       propertyPath: m_LocalScale.x

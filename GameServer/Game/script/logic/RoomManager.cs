@@ -6,7 +6,8 @@ public class RoomManager
     //最大id
     private static int maxId = 1;
     //房间列表
-    public static Dictionary<int, Room> rooms = new Dictionary<int, Room>();
+    public static Dictionary<int, Room> rooms = 
+        new Dictionary<int, Room>();
 
     //创建房间
     public static Room AddRoom()

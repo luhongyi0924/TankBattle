@@ -4,7 +4,8 @@ using UnityEngine;
 public class BattleManager
 {
     //战场中的坦克
-    public static Dictionary<string, BaseTank> idTankPairs = new Dictionary<string, BaseTank>();
+    public static Dictionary<string, BaseTank> idTankPairs = 
+        new Dictionary<string, BaseTank>();
 
     //初始化
     public static void Init()
@@ -63,7 +64,7 @@ public class BattleManager
     public static void EnterBattle(MsgEnterBattle msg)
     {
         //重置
-        BattleManager.Reset();
+        Reset();
         //关闭界面
         PanelManager.Close("RoomPanel");//可以放到房间系统的监听中
         PanelManager.Close("ResultPanel");

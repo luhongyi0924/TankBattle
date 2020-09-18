@@ -95,7 +95,6 @@ public class ByteArray
         readIdx = 0;
     }
 
-
     //打印缓冲区
     public override string ToString()
     {

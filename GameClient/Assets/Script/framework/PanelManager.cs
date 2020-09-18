@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 public static class PanelManager
 {
     public enum Layer
@@ -9,6 +10,7 @@ public static class PanelManager
         Panel,
         Tip,
     }
+
     //层级列表
     private static Dictionary<Layer, Transform> layers = new Dictionary<Layer, Transform>();
     //面板列表

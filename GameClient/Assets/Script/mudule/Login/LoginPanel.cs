@@ -39,8 +39,8 @@ public class LoginPanel : BasePanel
         regBtn = skin.transform.Find("RegisterBtn").GetComponent<Button>();
         bgImage = skin.transform.Find("BgImage").GetComponent<Image>();
         //监听
-        loginBtn.onClick.AddListener(OnLoginClick);
-        regBtn.onClick.AddListener(OnRegClick);
+        loginBtn.onClick.AddListener(OnLoginBtnClick);
+        regBtn.onClick.AddListener(OnRegBtnClick);
         //网络协议监听
         NetManager.AddMsgListener("MsgLogin", OnMsgLogin);
         //网络事件监听
@@ -76,13 +76,13 @@ public class LoginPanel : BasePanel
     }
 
     //当按下注册按钮
-    public void OnRegClick()
+    public void OnRegBtnClick()
     {
         PanelManager.Open<RegisterPanel>();
     }
 
     //当按下登陆按钮
-    public void OnLoginClick()
+    public void OnLoginBtnClick()
     {
         //用户名密码为空
         if (idInput.text == "" || pwInput.text == "")
@@ -103,7 +103,7 @@ public class LoginPanel : BasePanel
         MsgLogin msg = (MsgLogin)msgBase;
         if (msg.result == 0)
         {
-            Debug.Log("登陆成功");
+            Debug.Log("登录成功");
             //设置id
             GameMain.id = msg.id;
             //打开房间列表界面
@@ -113,7 +113,7 @@ public class LoginPanel : BasePanel
         }
         else
         {
-            PanelManager.Open<TipPanel>("登陆失败");
+            PanelManager.Open<TipPanel>("登录失败");
         }
     }
 

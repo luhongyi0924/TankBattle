@@ -10,7 +10,8 @@ class NetManager
     //监听Socket
     public static Socket listenfd;
     //客户端Socket及状态信息
-    public static Dictionary<Socket, ClientState> clients = new Dictionary<Socket, ClientState>();
+    public static Dictionary<Socket, ClientState> clients = 
+        new Dictionary<Socket, ClientState>();
     //Select的检查列表
     static List<Socket> checkRead = new List<Socket>();
     //ping间隔
@@ -19,7 +20,8 @@ class NetManager
     public static void StartLoop(int listenPort)
     {
         //Socket
-        listenfd = new Socket(AddressFamily.InterNetwork,SocketType.Stream, ProtocolType.Tcp);
+        listenfd = new Socket
+            (AddressFamily.InterNetwork,SocketType.Stream, ProtocolType.Tcp);
         //Bind
         IPAddress ipAdr = IPAddress.Parse("0.0.0.0");
         IPEndPoint ipEp = new IPEndPoint(ipAdr, listenPort);
@@ -97,8 +99,10 @@ class NetManager
     {
         ClientState state = clients[clientfd];
         ByteArray readBuff = state.readBuff;
+
         //接收
-        int count = 0;
+        int count ;
+
         //缓冲区不够，清除，若依旧不够，只能返回
         //当单条协议超过缓冲区长度时会发生
         if (readBuff.remain <= 0)
@@ -106,12 +110,14 @@ class NetManager
             OnReceiveData(state);
             readBuff.MoveBytes();
         };
+
         if (readBuff.remain <= 0)
         {
             Console.WriteLine("Receive fail , maybe msg length > buff capacity");
             Close(state);
             return;
         }
+
         try
         {
             count = clientfd.Receive(readBuff.bytes, readBuff.writeIdx, readBuff.remain, 0);
@@ -137,7 +143,6 @@ class NetManager
         readBuff.CheckAndMoveBytes();
     }
 
-
     //数据处理
     public static void OnReceiveData(ClientState state)
     {
@@ -157,8 +162,9 @@ class NetManager
         }
         readBuff.readIdx += 2;
         //解析协议名
-        int nameCount = 0;
-        string protoName = MsgBase.DecodeName(readBuff.bytes, readBuff.readIdx, out nameCount);
+        string protoName = MsgBase.DecodeName
+            (readBuff.bytes, readBuff.readIdx, out int nameCount);
+
         if (protoName == "")
         {
             Console.WriteLine("OnReceiveData MsgBase.DecodeName fail");
@@ -174,7 +180,9 @@ class NetManager
             Close(state);
             return;
         }
-        MsgBase msgBase = MsgBase.Decode(protoName, readBuff.bytes, readBuff.readIdx, bodyCount);
+        MsgBase msgBase = MsgBase.Decode
+            (protoName, readBuff.bytes, readBuff.readIdx, bodyCount);
+
         readBuff.readIdx += bodyCount;
         readBuff.CheckAndMoveBytes();
         //分发消息

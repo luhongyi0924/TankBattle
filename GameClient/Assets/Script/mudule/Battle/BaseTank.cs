@@ -48,7 +48,7 @@ public class BaseTank : MonoBehaviour
     {
         //皮肤
         GameObject skinRes = ResManager.LoadPrefab(skinPath);
-        skin = (GameObject)Instantiate(skinRes);
+        skin = Instantiate(skinRes);
         skin.transform.parent = this.transform;
         skin.transform.localPosition = Vector3.zero;
         skin.transform.localEulerAngles = Vector3.zero;
