@@ -11,7 +11,7 @@ public class MsgSyncTank : MsgBase
     public float ez = 0f;
     public float turretY = 0f;
     public float gunX = 0f;
-    //服务端补充
+    //服务端回
     public string id = "";		//哪个坦克
 }
 
@@ -26,7 +26,7 @@ public class MsgFire : MsgBase
     public float ex = 0f;
     public float ey = 0f;
     public float ez = 0f;
-    //服务端补充
+    //服务端回
     public string id = "";		//哪个坦克
 }
 
@@ -40,7 +40,7 @@ public class MsgHit : MsgBase
     public float x = 0f;
     public float y = 0f;
     public float z = 0f;
-    //服务端补充
+    //服务端回
     public string id = "";      //哪个坦克
     public int hp = 0;          //被击中坦克血量
     public int damage = 0;		//受到的伤害

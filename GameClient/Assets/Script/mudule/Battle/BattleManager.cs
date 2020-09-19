@@ -1,11 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 
-public class BattleManager
+public class BattleManager : MonoBehaviour
 {
     //战场中的坦克
-    public static Dictionary<string, BaseTank> idTankPairs = 
+    public static Dictionary<string, BaseTank> idTankPairs =
         new Dictionary<string, BaseTank>();
+
+    static GameObject yourTabPfb = ResManager.LoadPrefab("Prefabs/YourTab");
+    static GameObject friendTabPfb = ResManager.LoadPrefab("Prefabs/FriendTab");
+    static GameObject enemyTabPfb = ResManager.LoadPrefab("Prefabs/EnemyTab");
+    static BaseTank tank;
 
     //初始化
     public static void Init()
@@ -14,7 +20,6 @@ public class BattleManager
         NetManager.AddMsgListener("MsgEnterBattle", OnMsgEnterBattle);
         NetManager.AddMsgListener("MsgBattleResult", OnMsgBattleResult);
         NetManager.AddMsgListener("MsgLeaveBattle", OnMsgLeaveBattle);
-
         NetManager.AddMsgListener("MsgSyncTank", OnMsgSyncTank);
         NetManager.AddMsgListener("MsgFire", OnMsgFire);
         NetManager.AddMsgListener("MsgHit", OnMsgHit);
@@ -81,21 +86,41 @@ public class BattleManager
         PanelManager.Open<AimPanel>();
     }
 
-    //产生坦克
+    //产生坦克和小地图上的位置坐标
     public static void GenerateTank(TankInfo tankInfo)
     {
         //GameObject
         string objName = "Tank_" + tankInfo.id;
         GameObject tankObj = new GameObject(objName);
-        //AddComponent
-        BaseTank tank;
         if (tankInfo.id == GameMain.id)
         {
             tank = tankObj.AddComponent<CtrlTank>();
+            //设置你自己在地图上的标记
+            GameObject yourTab = Instantiate(yourTabPfb);
+            //标记的位置
+            yourTab.transform.position = new Vector3
+                (tankInfo.x, 200, tankInfo.z);
+            //标记的方向   TUDO：写进游戏场景脚本中的Update方法中
             CameraFollow cf = tankObj.AddComponent<CameraFollow>();
         }
         else
         {
+            if (tankInfo.camp == 1)
+            {
+                //设置盟军在地图上的标记
+                GameObject friendTab = Instantiate(friendTabPfb);
+                //标记的位置
+                friendTab.transform.position = new Vector3
+                    (tankInfo.x, 200, tankInfo.z);
+            }
+            else
+            {
+                //设置敌军在地图上的标记
+                GameObject enemyTab = Instantiate(enemyTabPfb);
+                //标记的位置
+                enemyTab.transform.position = new Vector3
+                    (tankInfo.x, 200, tankInfo.z);
+            }
             tank = tankObj.AddComponent<SyncTank>();
         }
 

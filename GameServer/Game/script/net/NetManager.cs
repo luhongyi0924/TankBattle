@@ -10,7 +10,7 @@ class NetManager
     //监听Socket
     public static Socket listenfd;
     //客户端Socket及状态信息
-    public static Dictionary<Socket, ClientState> clients = 
+    public static Dictionary<Socket, ClientState> clients =
         new Dictionary<Socket, ClientState>();
     //Select的检查列表
     static List<Socket> checkRead = new List<Socket>();
@@ -21,7 +21,7 @@ class NetManager
     {
         //Socket
         listenfd = new Socket
-            (AddressFamily.InterNetwork,SocketType.Stream, ProtocolType.Tcp);
+            (AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         //Bind
         IPAddress ipAdr = IPAddress.Parse("0.0.0.0");
         IPEndPoint ipEp = new IPEndPoint(ipAdr, listenPort);
@@ -101,7 +101,7 @@ class NetManager
         ByteArray readBuff = state.readBuff;
 
         //接收
-        int count ;
+        int count;
 
         //缓冲区不够，清除，若依旧不够，只能返回
         //当单条协议超过缓冲区长度时会发生

@@ -96,7 +96,7 @@ public static class NetManager
         //新增
         else
         {
-            msgListeners[msgName] = listener;
+            msgListeners.Add(msgName, listener);
         }
     }
 
