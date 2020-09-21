@@ -13,7 +13,7 @@ public class BattlePanel : BasePanel
     private Text camp2Text;
 
     //初始化
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "BattlePanel";
         layer = PanelManager.Layer.Panel;

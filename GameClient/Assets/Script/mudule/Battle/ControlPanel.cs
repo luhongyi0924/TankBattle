@@ -5,7 +5,7 @@ using UnityEngine;
 public class ControlPanel : BasePanel
 {
     private GameObject controlPanel;
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "ControlCanvas";
         layer = PanelManager.Layer.Panel;

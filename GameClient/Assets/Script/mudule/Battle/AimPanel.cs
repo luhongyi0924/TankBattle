@@ -8,7 +8,7 @@ public class AimPanel : BasePanel
     CtrlTank tank;
     private Image aimImage;
     //初始化
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "AimPanel";
         layer = PanelManager.Layer.Panel;

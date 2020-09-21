@@ -53,6 +53,7 @@ public class GameMain : MonoBehaviour
     void OnConnectClose(string err)
     {
         Debug.Log("断开连接");
+        PanelManager.Open<TipPanel>("断开连接");
     }
 
     //被踢下线

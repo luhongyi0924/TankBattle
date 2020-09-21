@@ -23,7 +23,7 @@ public class LoginPanel : BasePanel
     private string ip = "127.0.0.1";
     private int port = 8888;
     //初始化
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "LoginPanel";
         layer = PanelManager.Layer.Panel;

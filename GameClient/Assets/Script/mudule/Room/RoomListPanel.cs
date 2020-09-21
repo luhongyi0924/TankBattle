@@ -23,7 +23,7 @@ public class RoomListPanel : BasePanel
     private GameObject tankObj;
 
     //初始化
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "RoomListPanel";
         layer = PanelManager.Layer.Panel;

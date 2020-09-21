@@ -12,7 +12,7 @@ public class ResultPanel : BasePanel {
 	private Button okBtn;
 
 	//初始化
-	public override void OnShow() {
+	public override void OnInit() {
 		skinPath = "ResultPanel";
 		layer = PanelManager.Layer.Tip;
 	}

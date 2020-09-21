@@ -59,7 +59,7 @@ public class BattleManager : MonoBehaviour
         //场景
         foreach (BaseTank tank in idTankPairs.Values)
         {
-            MonoBehaviour.Destroy(tank.gameObject);
+            Destroy(tank.gameObject);
         }
         //列表
         idTankPairs.Clear();
@@ -89,7 +89,6 @@ public class BattleManager : MonoBehaviour
     //产生坦克和小地图上的位置坐标
     public static void GenerateTank(TankInfo tankInfo)
     {
-        //GameObject
         string objName = "Tank_" + tankInfo.id;
         GameObject tankObj = new GameObject(objName);
         if (tankInfo.id == GameMain.id)
@@ -227,7 +226,7 @@ public class BattleManager : MonoBehaviour
         }
         //删除坦克
         RemoveTank(msg.id);
-        MonoBehaviour.Destroy(tank.gameObject);
+        Destroy(tank.gameObject);
     }
 
     //收到同步协议

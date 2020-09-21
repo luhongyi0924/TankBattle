@@ -18,7 +18,7 @@ public class RegisterPanel : BasePanel
 
 
     //初始化
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "RegisterPanel";
         layer = PanelManager.Layer.Panel;

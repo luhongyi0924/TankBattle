@@ -40,7 +40,7 @@ public static class PanelManager
         }
         //组件
         BasePanel panel = root.gameObject.AddComponent<T>();
-        panel.OnShow();
+        panel.OnInit();
         panel.Init();
         //父容器
         Transform layer = layers[panel.layer];

@@ -16,7 +16,7 @@ public class RoomPanel : BasePanel
     private GameObject playerObj;
 
     //初始化
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "RoomPanel";
         layer = PanelManager.Layer.Panel;

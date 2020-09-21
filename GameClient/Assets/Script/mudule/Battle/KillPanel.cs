@@ -9,7 +9,7 @@ public class KillPanel : BasePanel
     private float startTime = 0;
 
     //初始化
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "KillPanel";
         layer = PanelManager.Layer.Tip;

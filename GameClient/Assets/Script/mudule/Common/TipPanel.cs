@@ -11,7 +11,7 @@ public class TipPanel : BasePanel
     private Button okBtn;
 
     //初始化
-    public override void OnShow()
+    public override void OnInit()
     {
         skinPath = "TipPanel";
         layer = PanelManager.Layer.Tip;

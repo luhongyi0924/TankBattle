@@ -56,7 +56,7 @@ public static class NetManager
         //新增事件
         else
         {
-            eventListeners[netEvent] = listener;
+            eventListeners.Add(netEvent, listener);
         }
     }
 
